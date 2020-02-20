@@ -1020,8 +1020,6 @@ torch::Tensor dwconv2d_backward_kernel_op(const torch::Tensor &input,
   DWConv2dKernelParams p = make_conv2d_kernel_backward_params(
       input, out_grad, kernel, up_h, up_w, down_h, down_w, pad_h, pad_w);
 
-  using namespace std::chrono;
-
   auto x = input.contiguous();
   auto grad = out_grad.contiguous();
 
