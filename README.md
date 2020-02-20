@@ -7,7 +7,7 @@ This implementation consists of 3 kernels from:
 2. DepthwiseConv2d for small feature maps from TensorFlow (https://github.com/tensorflow/tensorflow) and MXNet (https://github.com/apache/incubator-mxnet)
 3. Backward filter kernels from PaddlePaddle (https://github.com/PaddlePaddle/Paddle)
 
-I found this implementation faster than PyTorch native depthwise conv2d about 3~5x for larger feature maps, 1.5~2x for small feature maps if kernel size > 3. If used in EfficientNet, I got about 15% forward time speed ups.
+I found this implementation faster than PyTorch native depthwise conv2d about 3-5x for larger feature maps, 1.5-2x for small feature maps if kernel size > 3. If used in EfficientNet, I got about 15% forward time speed ups.
 
 
 ## Installation
