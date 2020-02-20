@@ -13,6 +13,12 @@ I found this implementation faster than PyTorch native depthwise conv2d about 3~
 ## Installation
 
 ```bash
+pip install torch-dwconv
+```
+
+or
+
+```bash
 > python setup.py install
 ```
 
